@@ -1,0 +1,39 @@
+body{
+    background-color: darkslategrey;
+    
+}
+
+h1{
+    color: blueviolet;
+    font-size: 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    color: blue;
+    font-size: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3{
+    color: blueviolet;
+    font-size: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4{
+    color: coral;
+    font-size: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5{
+    color: green;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+     color: black;
+     font-size: 50px;
+}
