@@ -1,39 +1,114 @@
+/* Meu Primeiro Comentario*/
+/* reset dp CSS para o navegador*/
+*{
+margin: 0; /* margem */
+padding: 0; /* preenchimento */
+}
+
 body{
-    background-color: darkslategrey;
-    
+    height:100% ;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#76e9f6, #aea0fe); /* cor do fundo */
+    background-repeat: no-repeat;
 }
-
-h1{
-    color: blueviolet;
-    font-size: 300px;
-    font-family: 'Courier New', Courier, monospace;
+.imagem{
+    display: flex;
+    justify-content:center;
 }
-
-h2{
-    color: blue;
-    font-size: 250px;
+.imagem img{
+    width: 170px;
+    border-radius: 200px;
+    margin-top: 150px;
+}
+.name{
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600px;
+    color: #032846; /* cor do nome */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.redes-sociais{
+    margin-top: 10px;
+    display: flex; /* organizar itens na mesma linha */
+    justify-content: center;
+    align-items: center; /* alinhamento */
+}
+.icon, .email{ 
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0,.1) ;
+    cursor: pointer;
+    margin: 3px;
+    overflow: hidden;
+}
+.icon i, .email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: #aec9f3; /* cor da bolota */
+    color: #032846; /* cor do icone */
+    cursor: pointer;
+}
+.icon span a{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color: #316ff5; /* nome dentro da bolota */
+    line-height: 35px;
+    font-size: 17px;  
+}
+.name-icon{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+    float: right;
+    color: rgb(255, 244, 240); /*  */
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
 
-h3{
-    color: blueviolet;
-    font-size: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+    .icon:hover{
+     width: 130
+     px;
+    background-color: #e5e6ec; /* cor de fundo da bolota */
+    border-radius: 20px;
+}
+.icon:nth-child(1):hover i{
+    background:#585555;
+}
+.icon:nth-child(2):hover i{
+    background:#ffa01b;
+}
+.icon:nth-child(3):hover i{
+    background:#3545f2;
+}
+.icon:nth-child(4):hover i{
+    background:#771fc4
+}    
+
+.email:hover i{
+
+
+
+
+
+
 }
 
-h4{
-    color: coral;
-    font-size: 150px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-h5{
-    color: green;
-    font-size: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-p{
-     color: black;
-     font-size: 50px;
-}
