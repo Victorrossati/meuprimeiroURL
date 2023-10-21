@@ -1,114 +1,296 @@
 /* Meu Primeiro Comentario*/
 /* reset dp CSS para o navegador*/
 *{
-margin: 0; /* margem */
-padding: 0; /* preenchimento */
-}
+  margin: 0; /* margem */
+  padding: 0; /* preenchimento */
+  }
+  
+  body{
+      height:100% ;
+      width:100% ;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(#76e9f6, #aea0fe); /* cor do fundo */
+      background-repeat: no-repeat;
+  }
+  .imagem{
+      display: flex;
+      justify-content:center;
+  }
+  .imagem img{
+      width: 170px;
+      border-radius: 200px;
+      margin-top: 150px;
+  }
+  .name{
+      margin-top: 10px;
+      display:flex;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 600px;
+      color: #032846; /* cor do nome */
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .redes-sociais{
+      margin-top: 10px;
+      display: flex; /* organizar itens na mesma linha */
+      justify-content: center;
+      align-items: center; /* alinhamento */
+  }
+  .icon, #email{ 
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      border-radius: 30px;
+      transition: all 0.3s ease-out;
+      box-shadow: 0 5px 5px rgba(0, 0, 0,.1) ;
+      cursor: pointer;
+      margin: 3px;
+      overflow: hidden;
+  }
+  .icon i, .email i{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 30px;
+      background-color: #aec9f3; /* cor da bolota */
+      color: #032846; /* cor do icone */
+      cursor: pointer;
+  }
+  .icon span a{
+      list-style: none;
+      font-family: 'Times New Roman', Times, serif;
+      float: right;
+      margin-right: 23px;
+      font-weight: 100;
+      color: #316ff5; /* nome dentro da bolota */
+      line-height: 35px;
+      font-size: 17px;  
+  }
+  .name-icon{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 40px;
+      float: right;
+      color: rgb(255, 244, 240); /*  */
+      font-weight: 100;
+      line-height: 35px;
+      font-size: 17px;
+  
+  
+  
+  }
+  .icon:hover{
+      width: 120px;
+      background-color: rgb(237, 237, 237);
+      border-radius: 20px;
+   }
+   .icon:nth-child(1):hover i{
+      background: #030303;
+   }
+   .icon:nth-child(2):hover i{
+      background: blueviolet;
+   }
+   .icon:nth-child(3):hover i{
+      background: blue;
+   }
+   .icon:nth-child(4):hover i{
+      background: purple;
+   }
+   .email:hover i{
+      background: red;
+   }
+   
+   /* Fim CSS Redes Sociais */
+   
+   
+   /* CSS texto */
+   .texto{
+      position: relative;
+      display: flex;
+      justify-content: center; /* centralizar texto */
+      align-items: center;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-align: justify;
+      width: 500px;
+      height: 150px;
+      padding: 30px 35px;
+      border-radius: 24px;
+      color: rgb(11, 80, 141);
+      background: #fff5f5;
+      overflow: hidden;
+      box-shadow: 0 3px 3px rgba(0,0,0, 0.9); /* RGBA com alpha para transparencia */
+     /* cursor: pointer; */ 
+   }
+   
+   #sobre-mim{
+      position: absolute;
+      top: 15px;
+      display: flex;
+      color: #3e49eb;
+      font-size: 23px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 35px;
+   }
+   .linguagem{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+   }
+   .linguagem img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      border-radius: 200px;
+      margin: 5px;
+      box-shadow: 2px 2px 2px rgb(98, 98, 98);
+   }
+   .Projetos {
+      margin: auto;
+      margin-top: 40px;
+      flex-direction: column;
+   }
+   
+   .Projetos a{
+      text-decoration: none; /* é usada para definir a ormatação de underline */
+      color: #0d0e0e;
+   }
+    .subtitulo{
+      display: flex;
+      justify-content: center;
+      color: #aec9f3;
+      font-size: 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 60px;
+    }
+   .item{
+      margin: auto;
+      display: flex; /* nulo */
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      color: rgb(0, 0, 0);
+      border: 1px solid #41adec;
+      border-radius: 100px;
+      width: 530px;
+      height: 60px;
+      margin-bottom: 7px;
+      background: #e0e2e2;
+      box-shadow: 0 5px 5px rgba(0,0,0, 0.9);
+      cursor: pointer;
+   }
+   
+   #video{
+      padding: 10px;
+      margin: auto;
+      display: none;
+   }
+   #video.active{
+      display: block;
+   }
+   .rodape{
+      color: #308ff4;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      padding: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   /* Fim da configurações para DESKTOP */
 
-body{
-    height:100% ;
-    width:100% ;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(#76e9f6, #aea0fe); /* cor do fundo */
-    background-repeat: no-repeat;
-}
-.imagem{
-    display: flex;
-    justify-content:center;
-}
-.imagem img{
-    width: 170px;
-    border-radius: 200px;
-    margin-top: 150px;
-}
-.name{
-    margin-top: 10px;
-    display:flex;
-    justify-content: center;
-    font-size: 32px;
-    font-weight: 600px;
-    color: #032846; /* cor do nome */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.redes-sociais{
-    margin-top: 10px;
-    display: flex; /* organizar itens na mesma linha */
-    justify-content: center;
-    align-items: center; /* alinhamento */
-}
-.icon, .email{ 
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    border-radius: 30px;
-    transition: all 0.3s ease-out;
-    box-shadow: 0 5px 5px rgba(0, 0, 0,.1) ;
-    cursor: pointer;
-    margin: 3px;
-    overflow: hidden;
-}
-.icon i, .email i{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    font-size: 22px;
-    border-radius: 30px;
-    background-color: #aec9f3; /* cor da bolota */
-    color: #032846; /* cor do icone */
-    cursor: pointer;
-}
-.icon span a{
-    list-style: none;
-    font-family: 'Times New Roman', Times, serif;
-    float: right;
-    margin-right: 23px;
-    font-weight: 100;
-    color: #316ff5; /* nome dentro da bolota */
-    line-height: 35px;
-    font-size: 17px;  
-}
-.name-icon{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 40px;
-    float: right;
-    color: rgb(255, 244, 240); /*  */
-    font-weight: 100;
-    line-height: 35px;
-    font-size: 17px;
 
+   /* Dispositivos Mobile */
 
+   @media (max-width 700px) {
+    .imagem img{
+      width: 150px;
+      border-radius: 200px;
+      margin-top: 30px;
+    
+    }
+    .texto{
+      width: 350px;
+      height: 500px; 
+    }
+    .item{
+      width: 350px
+    }
+    #video{
+      width: 330px;
+    }
+   } /* Fim resolução 700px */
 
-}
-    .icon:hover{
-     width: 130
-     px;
-    background-color: #e5e6ec; /* cor de fundo da bolota */
-    border-radius: 20px;
-}
-.icon:nth-child(1):hover i{
-    background:#585555;
-}
-.icon:nth-child(2):hover i{
-    background:#ffa01b;
-}
-.icon:nth-child(3):hover i{
-    background:#3545f2;
-}
-.icon:nth-child(4):hover i{
-    background:#771fc4
-}    
+   @media (max-width) {
+    .imagem img{
+      width: 120px;
+    }
+    .texto{
+      padding: 15px;
+      width: 244px;
+      height: 400px;
+      margin-top: 30px;
+    }
+    .subtitulo{
+      font-size: 22px;
+      margin-top: 22px;
+    }
+    p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #video{
+      width: 270px;
+      height: 40px;
+    }
+    .item{
+      width: 265px;
+      height: 40px;
+    }
+    .linguagem img im{
+      margin-top: 15px;
+      width: 120px;
+    }
+    .icon, #email i{
+      width: 25px;
+      height: 25px;
+      border-radius: 30px;
+    }
+    .icon i, #email i{
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      font-size: 15px;
+      border-radius: 30px;
+    }
+    .icon span a{
+      margin-right: 39px;
+      line-height: 22px;
+      font-size: 5px ;
+    }
+    .rodape{
+      font-size: 20px;
+      margin-top: 30px;
+      padding: 20px;
+    }
+    #video{
+    height: 160px;
+    width: 270px;
+  }
+  
+    /* Fim da resolução 500px */
 
-.email:hover i{
-
-
-
-
-
-
-}
-
-
+    
+   }
 
